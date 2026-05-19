@@ -39,6 +39,9 @@ public class MyQueue<T>
         head = head.Next;
 
         count--;
+        
+        if (head == null)
+             tail = null;
         return value;
     }
     public T Peek()
